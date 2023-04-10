@@ -64,7 +64,7 @@ public class CheckPairsTest {
 
             if (isOpeningCharacter(currentCharacter)) {
                 stack.push(currentCharacter);
-            } else if (closingCharacters.get(stack.peek()) == currentCharacter) {
+            } else if (!stack.isEmpty() && closingCharacters.get(stack.peek()) == currentCharacter) {
                 stack.pop();
             } else {
                 return false;
