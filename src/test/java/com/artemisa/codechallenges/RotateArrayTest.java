@@ -10,13 +10,13 @@ public class RotateArrayTest {
 
     /**
      * Given a 3x3 matrix, rotate it by 90 degrees in clockwise direction.
-     *
+     * <p>
      * Example:
      * Before rotation:
      * {1, 2, 3},
      * {4, 5, 6},
      * {7, 8, 9}
-     *
+     * <p>
      * After rotation:
      * {7, 4, 1},
      * {8, 5, 2},

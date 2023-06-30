@@ -13,20 +13,20 @@ public class CheckPairsTest {
     /**
      * Given a String with the following possible characters `[]{}()`.
      * Determine if all opening characters have a closing character and if they are closed in the right order.
-     *
+     * <p>
      * If the String has all the pairs closed and in the right order return true. Otherwise return false.
      * Assume that the input String is always != null and only has valid.characters.
      * An empty String is also a valid scenario.
-     *
+     * <p>
      * Examples:
-     *  "()" => true
-     *  "(())" => true
-     *  "{[()]}" => true
-     *  "(]" => false
-     *  "[{]}" => false
-     *  "][" => false
-     *  "([{" => false
-     *  "()[]" => true
+     * "()" => true
+     * "(())" => true
+     * "{[()]}" => true
+     * "(]" => false
+     * "[{]}" => false
+     * "][" => false
+     * "([{" => false
+     * "()[]" => true
      */
     @Test
     void checkPairsTest() {
