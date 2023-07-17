@@ -1,5 +1,6 @@
 package com.artemisa.codechallenges.leetcode;
 
+import com.artemisa.util.ListNode;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
@@ -71,27 +72,5 @@ public class AddTwoNumbersTest {
         }
 
         return result;
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            return String.format("%s%s", val, next != null ? next.toString() : "");
-        }
     }
 }
