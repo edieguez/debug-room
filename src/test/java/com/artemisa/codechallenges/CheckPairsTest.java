@@ -41,7 +41,7 @@ public class CheckPairsTest {
     }
 
     private boolean checkPairs(String input) {
-        if (input.length() == 0) {
+        if (input.isEmpty()) {
             return false;
         }
 
@@ -51,13 +51,14 @@ public class CheckPairsTest {
             return false;
         }
 
-        Stack<Character> stack = new Stack<>();
+        final Stack<Character> stack = new Stack<>();
         stack.push(currentCharacter);
 
-        Map<Character, Character> closingCharacters = new HashMap<>();
-        closingCharacters.put('{', '}');
-        closingCharacters.put('[', ']');
-        closingCharacters.put('(', ')');
+        final Map<Character, Character> closingCharacters = new HashMap<>() {{
+            put('{', '}');
+            put('[', ']');
+            put('(', ')');
+        }};
 
         for (int i = 1; i < input.length(); i++) {
             currentCharacter = input.charAt(i);

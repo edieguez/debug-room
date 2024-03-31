@@ -24,7 +24,7 @@ public class StepsToZeroTest {
         StringBuilder binary = new StringBuilder(input);
         int steps = 0;
 
-        while (binary.length() > 0) {
+        while (!binary.isEmpty()) {
             if (binary.charAt(binary.length() - 1) == '0') {
                 binary.deleteCharAt(binary.length() - 1);
             } else {
