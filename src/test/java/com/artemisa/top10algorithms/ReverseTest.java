@@ -21,6 +21,11 @@ public class ReverseTest {
         int reversedNumber = 987654321;
 
         assertEquals(reverseNumber(number), reversedNumber);
+
+        int negativeNumber = -123456789;
+        int reversedNegativeNumber = -987654321;
+
+        assertEquals(reverseNumber(negativeNumber), reversedNegativeNumber);
     }
 
     private String reverseStringA(String string) {
