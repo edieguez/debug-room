@@ -9,7 +9,8 @@ public class PalindromeTest {
 
     @Test
     void palindromeTest() {
-        assertTrue(isPalindrome("racecar"));
+        assertTrue(isPalindrome("race car"));
+        assertTrue(isPalindrome("Anita lava la tina"));
         assertTrue(isPalindrome("aeea"));
 
         assertFalse(isPalindrome("hello"));
@@ -17,16 +18,12 @@ public class PalindromeTest {
     }
 
     private boolean isPalindrome(String string) {
-        int left = 0;
-        int right = string.length() - 1;
+        String aux = string.replaceAll("\\s+", "").toLowerCase();
 
-        while (left < right) {
-            if (string.charAt(left) != string.charAt(right)) {
+        for (int i = 0, j = aux.length() - 1; i <= j; i++, j--) {
+            if (aux.charAt(i) != aux.charAt(j)) {
                 return false;
             }
-
-            left++;
-            right--;
         }
 
         return true;
